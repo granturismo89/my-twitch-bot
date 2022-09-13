@@ -34,10 +34,16 @@ client.on('message', (channel, tags, message, self) => {
     // Create up a switch statement with some possible commands and their outputs
     // The input shall be converted to lowercase form first
     // The outputs shall be in the chats
+    
+        // Use 'tags' to obtain the username of the one who has keyed in a certain input
+        // 'channel' shall be used to specify the channel name in which the message is going to be displayed
+        //For one to send a message in a channel, you specify the channel name, then the message
+        // We shall use backticks when using tags to support template interpolation in JavaScript
+        
+        // In case the message in lowercase is equal to the string 'commands', send the sender of that message some of the common commands
 
       
-        case '"Betting is open for White vs Black. Use !bet [amount] [team] to place a wager!"':
+        case 'Betting is open for White vs Black. Use !bet [amount] [team] to place a wager!':
             client.say(channel, `!betf Black`);
             break;
-    }
 });
