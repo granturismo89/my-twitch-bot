@@ -10,7 +10,7 @@ const client = new tmi.Client({
     username: 'gt89bot',
     password: process.env.TWITCH_OAUTH
   },
-  channels: ['granturismo89']
+  channels: ['fftbattleground']
 });
 
 client.connect();
