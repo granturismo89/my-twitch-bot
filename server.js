@@ -20,6 +20,11 @@ client.on('message', (channel, tags, message, self) => {
   if(self) return;
 
   if(message.toLowerCase() === 'betting is open for red vs green. use !bet [amount] [team] to place a wager!') {
-    setTimeout(() => {client.say(channel, `@${tags.username}, !betf red`); }, 5000);
+    setTimeout(() => {client.say(channel, `@${tags.username}, !betf red`); }, 8000);
   }
+  
+   if(message.toLowerCase() === 'betting is open for red vs blue. use !bet [amount] [team] to place a wager!') {
+    setTimeout(() => {client.say(channel, `@${tags.username}, !betf red`); }, 8000);
+  }
+  
 });
