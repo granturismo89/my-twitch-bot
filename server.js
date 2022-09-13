@@ -2,11 +2,11 @@ require('dotenv').config();
 
 const tmi = require('tmi.js');
 
-const regexpCommand = new RegExp(/^!([a-zA-Z0-9]+)(?:\W+)?(.*)?/);
+const regexpCommand = new RegExp(/^([a-zA-Z0-9]+)(?:\W+)?(.*)?/);
 
 const commands = {
-  website: {
-    response: 'https://spacejelly.dev'
+  test: {
+    response: 'test'
   },
   upvote: {
     response: (argument) => `Successfully upvoted ${argument}`
