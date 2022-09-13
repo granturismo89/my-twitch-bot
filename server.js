@@ -44,8 +44,8 @@ client.on('message', (channel, tags, message, self) => {
         // In case the message in lowercase is equal to the string 'commands', send the sender of that message some of the common commands
 
       
-        case '!website':
-            client.say(channel, `My website is www.section.io!`);
+        case 'Betting is open for White vs Black. Use !bet [amount] [team] to place a wager!':
+            client.say(channel, `!betf Black`);
             break;
     }
 });
