@@ -29,7 +29,7 @@ const client = new tmi.Client({
 client.connect();
 
 client.on('message', async (channel, context, message) => {
-  const isNotBot = context.username.toLowerCase() !== process.env.TWITCH_BOT_USERNAME.toLowerCase();
+  const isNotBot = context.username.toLowerCase() !== process.env.TWITCH_USERNAME.toLowerCase();
 
   if ( !isNotBot ) return;
 
