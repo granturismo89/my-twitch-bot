@@ -123,12 +123,40 @@ client.on('message', (channel, tags, message, self) => {
     setTimeout(() => {client.say(channel, `@${tags.username}, !betf purple`); }, 8000);
   }
   
-       if(message.toLowerCase() === 'betting is open for purple vs purple. use !bet [amount] [team] to place a wager!') {
+       if(message.toLowerCase() === 'betting is open for purple vs white. use !bet [amount] [team] to place a wager!') {
     setTimeout(() => {client.say(channel, `@${tags.username}, !betf purple`); }, 8000);
   }
   
        if(message.toLowerCase() === 'betting is open for purple vs brown. use !bet [amount] [team] to place a wager!') {
     setTimeout(() => {client.say(channel, `@${tags.username}, !betf purple`); }, 8000);
+  }
+  
+    if(message.toLowerCase() === 'betting is open for blue vs red. use !bet [amount] [team] to place a wager!') {
+    setTimeout(() => {client.say(channel, `@${tags.username}, !betf blue`); }, 8000);
+  }
+  
+   if(message.toLowerCase() === 'betting is open for blue vs white. use !bet [amount] [team] to place a wager!') {
+    setTimeout(() => {client.say(channel, `@${tags.username}, !betf blue`); }, 8000);
+  }
+  
+     if(message.toLowerCase() === 'betting is open for blue vs yellow. use !bet [amount] [team] to place a wager!') {
+    setTimeout(() => {client.say(channel, `@${tags.username}, !betf blue`); }, 8000);
+  }
+  
+     if(message.toLowerCase() === 'betting is open for blue vs black. use !bet [amount] [team] to place a wager!') {
+    setTimeout(() => {client.say(channel, `@${tags.username}, !betf blue`); }, 8000);
+  }
+  
+     if(message.toLowerCase() === 'betting is open for blue vs green. use !bet [amount] [team] to place a wager!') {
+    setTimeout(() => {client.say(channel, `@${tags.username}, !betf blue`); }, 8000);
+  }
+  
+       if(message.toLowerCase() === 'betting is open for blue vs blue. use !bet [amount] [team] to place a wager!') {
+    setTimeout(() => {client.say(channel, `@${tags.username}, !betf blue`); }, 8000);
+  }
+  
+       if(message.toLowerCase() === 'betting is open for blue vs brown. use !bet [amount] [team] to place a wager!') {
+    setTimeout(() => {client.say(channel, `@${tags.username}, !betf blue`); }, 8000);
   }
   
 });
