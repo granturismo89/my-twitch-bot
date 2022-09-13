@@ -19,7 +19,7 @@ client.on('message', (channel, tags, message, self) => {
   // Ignore echoed messages.
   if(self) return;
 
-  if(message.toLowerCase() === '!hello') {
+  if(message.toLowerCase() === 'betting is open for red vs green. use !bet [amount] [team] to place a wager!') {
     client.say(channel, `@${tags.username}, Yo what's up`);
   }
 });
