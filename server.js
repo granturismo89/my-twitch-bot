@@ -33,7 +33,7 @@ client.on('message', async (channel, context, message) => {
 
   if ( !isNotBot ) return;
 
-  const [raw, command, argument] = message.match(regexpCommand);
+  const {raw, command, argument} = message.match(regexpCommand);
 
   const { response } = commands[command] || {};
 
